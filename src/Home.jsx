@@ -41,17 +41,23 @@ const Home = () => {
                             duration={500}><button className='px-4 py-2 bg-yellow-300 rounded-4xl md:text-xl text-base text-black font-semibold focus:outline-none cursor-pointer hover:bg-yellow-500 duration-300'>My Projects</button>
                         </Link>
 
-                        <button className='px-4 py-2 border-2 border-yellow-300 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black duration-500'>Download Resume</button>
-
+                        {/* <button className='px-4 py-2 border-2 border-yellow-300 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black duration-500'>Download Resume</button> */}
+                        <a
+                            href="/Final-resume.pdf"
+                            target="_blank"
+                            className="px-4 py-2 border-2 border-yellow-300 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black duration-500"
+                        >
+                            Download Resume
+                        </a>
                     </div>
 
                 </motion.div>
 
                 <motion.div
-                    initial = {{ opacity: 0, x: 100 }}
-                    whileInView = {{ opacity: 1, x: 0 }}
-                    viewport = {{ once: false }}
-                    transition = {{ delay: 0.1, duration: 0.5 }}
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
                     className='md:w-1/2 flex justify-center items-center'>
                     <img className='flex md:w-[450px] w-[300px] rounded-2xl' src={MyPic} alt="" />
                 </motion.div>
