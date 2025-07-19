@@ -43,7 +43,7 @@ const Home = () => {
 
                         {/* <button className='px-4 py-2 border-2 border-yellow-300 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black duration-500'>Download Resume</button> */}
                         <a
-                            href="/Final-resume.pdf"
+                            href="/Resume-2.pdf"
                             target="_blank"
                             className="px-4 py-2 border-2 border-yellow-300 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black duration-500"
                         >
