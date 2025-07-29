@@ -1,4 +1,4 @@
-import img1 from './assets/CarWebScreenShot.png'
+import img1 from './assets/CrudApp.png'
 import img2 from './assets/E-CommImg.png'
 import img3 from './assets/Foodie-min.png'
 
@@ -7,16 +7,16 @@ export const projectdata = [
     {
         id: 1,
         image : img1,
-        title: "Car Selling Website",
-        description: "A responsive Car Marketplace website using React and Tailwind CSS to practice React Router DOM and slider methods by following a YouTube and using ChatGPT as a reference. And also added a Framer Motion effects for appealing viewing experience",
-        liveUrl: "https://car-buying-website.netlify.app/",
-        GitHubUrl: "https://github.com/vijayanand-1790/Car-buying-website"
+        title: "CRUD App",
+        description: "Built a simple CRUD app by using React Redux Toolkit and React Router DOM by following a YouTube and using ChatGPT as a reference And achieved a perfect CRUD actions with enhanced User Interface and clean code",
+        liveUrl: "https://crud-app-reduxtoolkit.netlify.app/",
+        GitHubUrl: "https://github.com/vijayanand-1790/CRUD_App_using_Redux_Toolkit"
     },
     {
         id: 2,
         image : img2,
         title: "E-Commerce Website",
-        description: "Developed an E-Commerce website using React and Tailwind CSS with Cart Functionalities including Add to Cart, Remove from Cart, Counts and Total Amount with reference from Youtube and other online websites for hands-on practice",
+        description: "Developed an E-Commerce website using React.js and Tailwind CSS with Cart Functionalities including Add to Cart, Remove from Cart, Counts and Total Amount with online references and websites for hands-on practice",
         liveUrl: "https://e-commerce-website-clothing.netlify.app/",
         GitHubUrl: "https://github.com/vijayanand-1790/E-Commerce-Website-Clothing"
     },

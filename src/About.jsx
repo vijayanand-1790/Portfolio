@@ -46,7 +46,7 @@ const About = () => {
                         <br />
                         <br />
                         I’m now actively seeking opportunities where I can contribute to meaningful work, collaborate with others, and continue evolving in this exciting field. */}
-                        I’m a React Developer with 1 year of hands-on experience, passionate about creating clean, responsive, and engaging user interfaces. I specialize in React.js and Tailwind CSS, with a strong foundation in HTML, CSS, and JavaScript. <br />I’m eager to learn, grow, and stay updated with industry trends. Committed to writing efficient code, collaborating in teams, and delivering user-focused web solutions.
+                        I’m a self-taught front-end developer with a strong focus on React.js and modern UI building using Tailwind CSS. I’ve built several hands-on projects to deepen my understanding and apply real-world concepts. Eager to step into a React Developer internship, I’m passionate about collaborating with teams, learning from experienced professionals, and contributing meaningfully. I’m also curious to explore how things work in real industry settings and excited to grow further with new technologies and development practices.
                         </p>
                     <Link to='contact' smooth={true} offset={-80} duration={500}>
                         <button

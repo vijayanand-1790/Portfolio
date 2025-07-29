@@ -111,7 +111,7 @@ const Contact = () => {
           <p className='md:text-2xl text-xl font-semibold mb-3 mt-12'>Connect With Me Anytime On</p>
           <div className='flex items-center gap-3 mt-2'>
             <FaPhoneAlt size={20} />
-            <p className='text-lg'>9884127840</p>
+            <p className='text-lg'>+91 9884127840</p>
           </div>
           <div className='flex items-center gap-3 mt-2'>
             <MdEmail size={20} />
@@ -121,7 +121,7 @@ const Contact = () => {
           <div className='mt-8'>
             <p className='md:text-2xl text-xl font-semibold mb-3'>Find Me On</p>
             <div className='flex gap-5'>
-              <a href="https://linkedin.com/in/vijay-anand-4a206a374" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaLinkedin size={35}/></a>
+              <a href="https://linkedin.com/in/vijay-anand-4a206a374/" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaLinkedin size={35}/></a>
               <a href="https://github.com/vijayanand-1790" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaGithub size={35} /></a>
             </div>
           </div>

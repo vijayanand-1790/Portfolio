@@ -108,8 +108,8 @@ const Skills = () => {
                   initial={{ x: "-100%", opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
-                  className=' w-[70%] h-full bg-yellow-300 relative rounded'>
-                  <span className='absolute right-0 -top-8'>70%</span>
+                  className=' w-[60%] h-full bg-yellow-300 relative rounded'>
+                  <span className='absolute right-0 -top-8'>60%</span>
 
                 </motion.span>
 
@@ -131,8 +131,8 @@ const Skills = () => {
                   initial={{ x: "-100%", opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className=' w-[80%] h-full bg-yellow-300 relative rounded'>
-                  <span className='absolute right-0 -top-8'>80%</span>
+                  className=' w-[75%] h-full bg-yellow-300 relative rounded'>
+                  <span className='absolute right-0 -top-8'>75%</span>
 
                 </motion.span>
 

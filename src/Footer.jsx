@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
 
                 <div className='flex gap-5 text-4xl md:px-5 px-4 mt-10'>
-                    <a href="https://linkedin.com/in/vijay-anand-4a206a374" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaLinkedin size={35} /></a>
+                    <a href="https://linkedin.com/in/vijay-anand-4a206a374/" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaLinkedin size={35} /></a>
                     <a href="https://github.com/vijayanand-1790" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaGithub size={35} /></a>
                 </div>
 
