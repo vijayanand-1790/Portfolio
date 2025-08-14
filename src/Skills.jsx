@@ -54,7 +54,7 @@ const Skills = () => {
           <div
             className='flex flex-col justify-center items-center text-center gap-2'>
             <img src={css} className='md:w-20 w-15' alt="" />
-            <h3 className='text-lg'>CSS</h3>
+            <h3 className='text-lg'>CSS3</h3>
           </div>
 
         </motion.div>

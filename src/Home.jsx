@@ -26,10 +26,10 @@ const Home = () => {
                             className='text-4xl md:text-7xl font-extrabold pt-5'>I'm <span className='text-yellow-300'>Vijay Anand</span>
                         </h1>
                         <h6
-                            className='md:text-4xl text-2xl font-bold'>a React Developer Intern.
+                            className='md:text-4xl text-2xl font-bold'>a Junior Frontend Developer.
                         </h6>
                         <p
-                            className='md:text-2xl text-xl font-light md:mt-8 mt-5'>Crafting Responsive Interfaces Using React | Open to Internship Roles.
+                            className='md:text-2xl text-xl font-light md:mt-8 mt-5'>Crafting Responsive Interfaces Using React and Tailwind CSS.
                         </p>
                     </div>
 
@@ -43,7 +43,7 @@ const Home = () => {
 
                         {/* <button className='px-4 py-2 border-2 border-yellow-300 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black duration-500'>Download Resume</button> */}
                         <a
-                            href="/ResumeDev.pdf"
+                            href="/ResumeUpdated.pdf"
                             target="_blank"
                             className="px-4 py-2 border-2 border-yellow-300 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black duration-500"
                         >
