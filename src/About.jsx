@@ -39,14 +39,7 @@ const About = () => {
                         <h4 className='md:text-2xl text-lg text-gray-400'>Get to know more about me.</h4>
                     </div>
                     <p className='md:mt-10 mt-5 md:text-lg text-base'>
-                        {/* I’m a self-taught front-end developer with a strong focus on JavaScript and React. Though I graduated several years ago and spent time working in a completely different domain, I had long been searching for something more creative, engaging, challenging, and personally fulfilling.
-                        <br />
-                        <br />
-                        Discovering web development was a turning point — it offered the perfect blend of problem-solving and self-expression I had been looking for. Since then, I’ve committed myself fully to learning, building real-world projects, and growing as a developer.
-                        <br />
-                        <br />
-                        I’m now actively seeking opportunities where I can contribute to meaningful work, collaborate with others, and continue evolving in this exciting field. */}
-                        I am a dedicated Junior Frontend Developer with eleven months of professional experience in a company environment. Proficient in React.js, JavaScript, Tailwind CSS, and HTML.
+                        I am a dedicated Frontend Developer with 1.5 years of experience in a company environment. Proficient in React.js, JavaScript, Tailwind CSS, HTML and CSS3.
                         I have delivered several real-world projects that enhanced my skills and demonstrated my ability to create responsive, user-friendly interfaces. My work focuses on clean, maintainable code
                         and modern development practices. With a strong drive to learn, adapt, and grow, I aim to contribute innovative, high-quality solutions to dynamic development teams.
                         </p>
