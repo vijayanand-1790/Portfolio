@@ -30,7 +30,7 @@ const Projects = () => {
                 className='bg-black shadow-neutral-600 shadow-md border-1 border-neutral-500 rounded-2xl'>
                 <img src={project.image} alt={project.title} className='rounded-tr-2xl rounded-tl-2xl object-cover md:h-70 h-40' />
                 <div className='px-4 py-2 flex flex-col justify-center items-center md:space-y-6 space-y-3'>
-                  <h2 className='md:text-3xl text-2xl font-semibold'> {project.title} </h2>
+                  <h2 className='md:text-3xl text-2xl font-bold pt-3'> {project.title} </h2>
                   <p className='md:mb-6 mb-3'> {project.description} </p>
 
                   {/* <p className='md:text-base text-sm'>Built with: <span className='px-2 py-0 bg-neutral-600 rounded mr-1'>React</span> <span className='px-2 py-0 bg-neutral-600 rounded '>Tailwind CSS</span> </p> */}
