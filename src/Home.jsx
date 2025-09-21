@@ -4,8 +4,6 @@ import { motion } from "motion/react";
 
 const Home = () => {
 
-    // const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
-
     return (
         <div id='home' className='w-full h-auto text-white bg-black overflow-x-hidden'>
 
