@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 const Home = () => {
 
 	return (
-		<div id='home' className='w-full h-auto text-white bg-black'>
+		<div id='home' className='w-full h-auto text-black bg-neutral-300'>
 
 			<div className='max-w-6xl mx-auto flex md:flex-row flex-col-reverse md:gap-x-5 gap-x-3 lg:px-0 md:px-6 px-5 md:pt-20 pt-18 md:pb-50 md:mt-14 pb-20'>
 				<motion.div
@@ -21,7 +21,7 @@ const Home = () => {
 							className='md:text-3xl text-xl'>Hello!
 						</p>
 						<h1
-							className='text-4xl md:text-7xl font-extrabold pt-5'>I'm <span className='text-yellow-300'>Vijay Anand</span>
+							className='text-4xl md:text-7xl font-extrabold pt-5'>I'm <span className='text-blue-600'>Vijay Anand</span>
 						</h1>
 						<h6
 							className='md:text-4xl text-2xl font-bold'>a Front-End Developer.
@@ -36,7 +36,7 @@ const Home = () => {
 						<Link to='projects'
 							smooth={true}
 							offset={-80}
-							duration={500}><button className='px-4 py-2 bg-yellow-300 rounded-4xl md:text-xl text-base text-black font-semibold focus:outline-none cursor-pointer hover:bg-yellow-500 duration-300'>My Projects</button>
+							duration={500}><button className='px-4 py-2 bg-blue-600 rounded-4xl md:text-xl text-base text-white font-semibold focus:outline-none cursor-pointer hover:bg-blue-500 duration-300 hover:shadow-2xl'>My Projects</button>
 						</Link>
 
 						{/* <button className='px-4 py-2 border-2 border-yellow-300 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black duration-500'>Download Resume</button> */}
