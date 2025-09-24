@@ -14,7 +14,7 @@ const Projects = () => {
 
         <div>
           <h1 className='text-white md:text-6xl text-4xl font-bold text-center'>My Projects</h1>
-          <p className='flex px-4 justify-center items-center text-center md:pt-5 pt-3 pb-5'>Here are some of my projects which are developed with the ideas gathered from Youtube, ChatGPT and other websites like w3schools to practice and improve the skills I learned.</p>
+          <p className='flex px-4 justify-center items-center text-center md:pt-5 pt-3 pb-5'>Below are the projects I've done for the better practice</p>
         </div>
 
         <motion.div
