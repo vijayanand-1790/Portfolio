@@ -73,10 +73,10 @@ const Contact = () => {
 
       <div className='max-w-7xl flex md:flex-row flex-col justify-center items-center mx-auto md:pt-10 pt-6 md:pb-30 pb-22'>
         <motion.form
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -60 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          transition={{ delay: 0.1, duration: 1 }}
           ref={form} onSubmit={sendEmail} className='md:w-[60%] w-full flex flex-col md:px-15 px-5 md:gap-5 gap-3'>
           <label className='text-xl font-semibold'>Name</label>
           <input type="text" name="user_name" onChange={(e) => setName(e.target.value)} value={name} placeholder='Name' className='outline-2 outline-white p-4 rounded-xl' />
@@ -102,10 +102,10 @@ const Contact = () => {
         {/* Right side */}
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -60 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 1 }}
           className='md:w-[40%] w-full md:px-15 px-5 md:pt-0 pt-10'>
           <img src={ContactImg} className='md:w-70 w-45' alt="" />
           <p className='md:text-2xl text-xl font-semibold mb-3 mt-12'>Connect With Me Anytime On</p>

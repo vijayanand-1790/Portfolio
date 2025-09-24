@@ -20,10 +20,10 @@ const Skills = () => {
         <p className='flex px-4 justify-center items-center text-center md:pt-1 pt-0'>I'm skilled in the below front-end technologies.</p>
 
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 1 }}
           className='grid grid-cols-3 md:grid-cols-6 items-center text-center md:gap-15 gap-5 md:pl-35 pl-4 px-5 md:pt-10 pt-4'>
 
           <div
@@ -63,10 +63,10 @@ const Skills = () => {
 
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 1 }}
           className='md:w-[80%] w-[100%] md:mt-10 mt-8 '>
 
 
@@ -83,8 +83,8 @@ const Skills = () => {
 
                 <motion.span
                   initial={{ x: "-100%", opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.3 }}
                   className=' w-[80%] h-full bg-yellow-300 relative rounded'>
                   <span className='absolute right-0 -top-8'>80%</span>
 
@@ -106,8 +106,8 @@ const Skills = () => {
 
                 <motion.span
                   initial={{ x: "-100%", opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.3 }}
                   className=' w-[60%] h-full bg-yellow-300 relative rounded'>
                   <span className='absolute right-0 -top-8'>60%</span>
 
@@ -129,8 +129,8 @@ const Skills = () => {
 
                 <motion.span
                   initial={{ x: "-100%", opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.3 }}
                   className=' w-[75%] h-full bg-yellow-300 relative rounded'>
                   <span className='absolute right-0 -top-8'>75%</span>
 
@@ -152,8 +152,8 @@ const Skills = () => {
 
                 <motion.span
                   initial={{ x: "-100%", opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.3 }}
                   className=' w-[80%] h-full bg-yellow-300 relative rounded'>
                   <span className='absolute right-0 -top-8'>80%</span>
 
@@ -175,8 +175,8 @@ const Skills = () => {
 
                 <motion.span
                   initial={{ x: "-100%", opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.3 }}
                   className=' w-[75%] h-full bg-yellow-300 relative rounded'>
                   <span className='absolute right-0 -top-8'>75%</span>
 

@@ -1,6 +1,8 @@
 import img1 from './assets/ecomweb.png'
 import img2 from './assets/carsell.png'
 import img3 from './assets/CrudApp.png'
+import img4 from './assets/TaskManager.png'
+import img5 from './assets/Foodie-min.png'
 
 export const projectdata = [
 
@@ -28,4 +30,21 @@ export const projectdata = [
         liveUrl: "https://crud-app-reduxtoolkit.netlify.app/",
         GitHubUrl: "https://github.com/vijayanand-1790/CRUD_App_using_Redux_Toolkit"
     },
+    {
+        id: 4,
+        image: img4,
+        title: "Task Manager",
+        description: "Built a task manager with local storage access and utilized the inline modification of each tasks. Made with Context API for better state management. Done by React.js and tailwind CSS for more dynamic and responsive layout",
+        liveUrl: "https://task-manager-with-context-api.vercel.app/",
+        GitHubUrl: "https://github.com/vijayanand-1790/Task_Manager_with_Context_API"
+    },
+    {
+        id: 5,
+        image: img5,
+        title: "Food App",
+        description: "Created a mock food app with React.js and Tailwind CSS with charming food images. Achieved a fully responsive appearance with grid systems in Tailwind css. Designed with filtering feature to filter foods according to users preference",
+        liveUrl: "https://food-website-zeta-liart.vercel.app/",
+        GitHubUrl: "https://github.com/vijayanand-1790/Food-website"
+    }
+
 ]

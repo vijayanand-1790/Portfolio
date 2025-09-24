@@ -9,7 +9,7 @@ const Projects = () => {
   // const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div id='projects' className='text-white bg-black overflow-x-hidden'>
+    <div id='projects' className='text-white bg-black overflow-y-hidden'>
       <div className='max-w-7xl mx-auto flex flex-col justify-center items-center md:px-5 lg:px-0 px-3 md:pt-0 pt-8 md:pb-15 pb-14'>
 
         <div>
@@ -18,17 +18,17 @@ const Projects = () => {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -70 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 1 }}
           className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-0 px-5 mt-3 md:gap-15 gap-8'>
 
           {
             projectdata.map((project) =>
               <div key={project.id}
-                className='bg-black shadow-neutral-600 shadow-md border-1 border-neutral-500 rounded-2xl'>
-                <img src={project.image} alt={project.title} className='rounded-tr-2xl rounded-tl-2xl object-cover md:h-70 h-40' />
+                className='bg-black shadow-neutral-600 shadow-md border-1 border-neutral-500 rounded-2xl hover:-translate-y-2 duration-200 hover:shadow-[0_0_25px_5px_rgba(250,204,21,0.9)]'>
+                <img src={project.image} alt={project.title} className='rounded-tr-2xl rounded-tl-2xl object-cover md:h-50 h-40' />
                 <div className='px-4 py-2 flex flex-col justify-center items-center md:space-y-6 space-y-3'>
                   <h2 className='md:text-3xl text-2xl font-bold pt-3'> {project.title} </h2>
                   <p className='md:mb-6 mb-3'> {project.description} </p>
