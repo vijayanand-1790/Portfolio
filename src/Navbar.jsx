@@ -17,7 +17,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<div className='w-full border-b border-neutral-500 bg-black fixed top-0 left-0 z-[100] text-gray-200 overflow-x-hidden'>
+		<div className='w-full border-b border-neutral-500 bg-neutral-100 fixed top-0 left-0 z-[100] text-black overflow-x-hidden'>
 			<div className='max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-0 md:px-8 py-3'>
 				<div>
 					<h1 className='font-bold text-2xl'>Vijay Anand.</h1>
@@ -29,7 +29,7 @@ const Navbar = () => {
 					{
 						data.map((item) =>
 
-							<ul key={item.id} className='text-lg font-bold tracking-wide hover:text-yellow-500 duration-400 cursor-pointer'>
+							<ul key={item.id} className='text-lg font-bold tracking-wide hover:text-blue-600 duration-300 cursor-pointer'>
 								<li>
 									<Link activeClass="active"
 										to={item.link}

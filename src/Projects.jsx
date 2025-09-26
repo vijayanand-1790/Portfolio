@@ -6,15 +6,13 @@ import { useMediaQuery } from 'react-responsive';
 
 const Projects = () => {
 
-  // const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
-
   return (
-    <div id='projects' className='text-white bg-black overflow-y-hidden'>
+    <div id='projects' className='bg-neutral-200 text-black overflow-y-hidden'>
       <div className='max-w-7xl mx-auto flex flex-col justify-center items-center md:px-5 lg:px-0 px-3 md:pt-0 pt-8 md:pb-15 pb-14'>
 
         <div>
-          <h1 className='text-white md:text-6xl text-4xl font-bold text-center'>My Projects</h1>
-          <p className='flex px-4 justify-center items-center text-center md:pt-5 pt-3 pb-5'>Below are the projects I've done for the better practice</p>
+          <h1 className='text-black md:text-6xl text-4xl font-bold text-center'>My Projects</h1>
+          <p className='flex px-4 justify-center items-center text-center md:pt-2 pt-3 pb-5'>Below are the projects I've done for the better practice</p>
         </div>
 
         <motion.div
@@ -27,7 +25,7 @@ const Projects = () => {
           {
             projectdata.map((project) =>
               <div key={project.id}
-                className='bg-black shadow-neutral-600 shadow-md border-1 border-neutral-500 rounded-2xl hover:-translate-y-2 duration-200 hover:shadow-[0_0_25px_5px_rgba(250,204,21,0.9)]'>
+                className='bg-neutral-100 text-black shadow-neutral-600 shadow-md border-1 border-neutral-500 rounded-2xl hover:-translate-y-2 duration-200 hover:shadow-[0_0_25px_5px_rgba(250,204,21,0.9)]'>
                 <img src={project.image} alt={project.title} className='rounded-tr-2xl rounded-tl-2xl object-cover md:h-50 h-40' />
                 <div className='px-4 py-2 flex flex-col justify-center items-center md:space-y-6 space-y-3'>
                   <h2 className='md:text-3xl text-2xl font-bold pt-3'> {project.title} </h2>
@@ -37,11 +35,11 @@ const Projects = () => {
 
 
                   <div className='flex justify-center items-center md:gap-4 gap-3 mb-5'>
-                    <a className='flex justify-center items-center md:px-4 px-3 md:py-3 py-2 bg-yellow-300 hover:bg-yellow-500 duration-300 rounded-4xl text-xl text-black font-semibold cursor-pointer md:gap-1 gap-3' href={project.liveUrl} target='_blank' rel="noopener noreferrer" >
+                    <a className='flex justify-center items-center md:px-4 px-3 md:py-3 py-2 bg-blue-600 hover:bg-blue-700 duration-300 rounded-4xl text-xl text-white font-semibold cursor-pointer md:gap-1 gap-3' href={project.liveUrl} target='_blank' rel="noopener noreferrer" >
                       <FaEye />
                       <p className='md:text-base font-semibold text-sm'>Live Demo</p>
                     </a>
-                    <a className='flex justify-center items-center md:px-4 px-3 md:py-3 py-2 bg-black border-2 border-yellow-300 rounded-4xl text-xl text-white font-semibold cursor-pointer md:gap-1 gap-3 hover:bg-yellow-300 duration-500 hover:text-black' href={project.GitHubUrl} target='_blank' rel="noopener noreferrer">
+                    <a className='flex justify-center items-center md:px-4 px-3 md:py-3 py-2 border-3 border-blue-600 rounded-4xl text-xl text-black hover:text-white font-semibold cursor-pointer md:gap-1 gap-3 hover:bg-blue-600 duration-300' href={project.GitHubUrl} target='_blank' rel="noopener noreferrer">
                       <FaGithub />
                       <p className='md:text-base text-sm font-semibold'>Source Code</p>
                     </a>

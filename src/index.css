@@ -9,7 +9,7 @@ body {
 }
 
 .active {
-    color: #facc15;
+    color: #2563EB;
     /* Tailwind yellow-500 */
-    border-bottom: 2px solid #facc15;
+    border-bottom: 2px solid #2563EB;
 }

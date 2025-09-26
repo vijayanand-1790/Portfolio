@@ -4,7 +4,6 @@ import ContactImg from './assets/phoneYellow.png'
 import { FaFacebook, FaGithub, FaLinkedin, FaPhone, FaPhoneAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { motion } from "motion/react";
-import { useMediaQuery } from 'react-responsive';
 
 const Contact = () => {
 
@@ -67,8 +66,8 @@ const Contact = () => {
 
   return (
 
-    <div id='contact' className='text-white bg-black overflow-x-hidden'>
-      <h1 className='text-white md:text-6xl text-4xl font-bold text-center md:pt-5 pt-3'>Contact Me</h1>
+    <div id='contact' className='text-black bg-neutral-200 overflow-x-hidden'>
+      <h1 className='text-black md:text-6xl text-4xl font-bold text-center md:pt-5 pt-3'>Contact Me</h1>
       <p className='flex px-4 justify-center items-center md:pt-3 pt-1'>Get in touch with me</p>
 
       <div className='max-w-7xl flex md:flex-row flex-col justify-center items-center mx-auto md:pt-10 pt-6 md:pb-30 pb-22'>
@@ -79,14 +78,14 @@ const Contact = () => {
           transition={{ delay: 0.1, duration: 1 }}
           ref={form} onSubmit={sendEmail} className='md:w-[60%] w-full flex flex-col md:px-15 px-5 md:gap-5 gap-3'>
           <label className='text-xl font-semibold'>Name</label>
-          <input type="text" name="user_name" onChange={(e) => setName(e.target.value)} value={name} placeholder='Name' className='outline-2 outline-white p-4 rounded-xl' />
+          <input type="text" name="user_name" onChange={(e) => setName(e.target.value)} value={name} placeholder='Name' className='outline-2 p-4 rounded-xl' />
           <label className='text-xl font-semibold'>Email</label>
-          <input type="email" name="user_email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder='Email' className='outline-2 outline-white p-4 rounded-xl' />
+          <input type="email" name="user_email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder='Email' className='outline-2 p-4 rounded-xl' />
           {/* <label className='text-xl font-semibold'>Subject</label>
           <input name="subject" type="text" placeholder="Subject" className='outline-1 outline-white p-4 rounded-xl'/> */}
           <label className='text-xl font-semibold'>Message</label>
-          <textarea rows={4} cols={35} name="message" onChange={(e) => setMessage(e.target.value)} value={message} placeholder='Write your message...' className='outline-2 outline-white p-4 rounded-xl' />
-          <input type="submit" value="Send Message" className='bg-yellow-300 hover:bg-yellow-500 duration-300 p-3 rounded-xl text-black text-xl font-semibold mt-2 cursor-pointer' />
+          <textarea rows={4} cols={35} name="message" onChange={(e) => setMessage(e.target.value)} value={message} placeholder='Write your message...' className='outline-2 p-4 rounded-xl' />
+          <input type="submit" value="Send Message" className='bg-blue-600 hover:bg-blue-700 duration-300 p-3 rounded-xl text-white text-xl font-semibold mt-2 cursor-pointer' />
 
           {
             ErrorMsg && <p className='md:text-lg text-base text-red-400 font-semibold animate-bounce'> {ErrorMsg} </p>
@@ -121,7 +120,7 @@ const Contact = () => {
           <div className='mt-8'>
             <p className='md:text-2xl text-xl font-semibold mb-3'>Find Me On</p>
             <div className='flex gap-5'>
-              <a href="https://linkedin.com/in/vijay-anand-4a206a374/" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaLinkedin size={35}/></a>
+              <a href="https://linkedin.com/in/vijay-anand-4a206a374/" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaLinkedin size={35} /></a>
               <a href="https://github.com/vijayanand-1790" target='_blank' rel="noopener noreferrer" className='hover:translate-y-1.5 duration-200'><FaGithub size={35} /></a>
             </div>
           </div>
