@@ -55,7 +55,7 @@ const Navbar = () => {
 				{/* Mobile Menu */}
 
 				{
-					<div className={`${showMenu ? "right-0" : "-right-[100%] "} w-[80%] h-screen flex flex-col items-center bg-gradient-to-r from-black to-gray-900 p-5 duration-400 fixed top-0 z-[200] border-l-2 border-neutral-700 shadow-2xl rounded-l-4xl pt-12`}>
+					<div className={`${showMenu ? "right-0" : "-right-[100%] "} w-[80%] h-screen flex flex-col items-center bg-neutral-200 p-5 duration-400 fixed top-0 z-[200] border-l-2 border-neutral-700 shadow-2xl rounded-l-4xl pt-12`}>
 						<img src={MyPic} className='flex w-20 rounded-full border-1 border-neutral-700 shadow-2xl' alt="" />
 						<div className='mt-10'>
 							<h1 className='flex text-center font-bold text-3xl'>Vijay Anand</h1>
@@ -81,13 +81,13 @@ const Navbar = () => {
 								)
 							}
 						</div>
-						<div className='mt-10 flex flex-col bg-neutral-900 p-2 rounded-xl space-y-5'>
-							<h3 className='flex justify-center'>Best Skills on</h3>
+						<div className='mt-10 flex flex-col bg-neutral-300 p-2 rounded-xl space-y-5'>
+							<h3 className='flex justify-center font-serif'>Best Skills on</h3>
 							<div className='flex gap-3'>
-								<div className='bg-black text-2xl w-fit p-2 rounded'><FaReact /></div>
-								<div className='bg-black text-2xl w-fit p-2 rounded'><RiTailwindCssFill /></div>
-								<div className='bg-black text-2xl w-fit p-2 rounded'><SiJavascript /></div>
-								<div className='bg-black text-2xl w-fit p-2 rounded'><SiHtml5 /></div>
+								<div className='text-2xl w-fit p-2 rounded'><FaReact /></div>
+								<div className=' text-2xl w-fit p-2 rounded'><RiTailwindCssFill /></div>
+								<div className=' text-2xl w-fit p-2 rounded'><SiJavascript /></div>
+								<div className=' text-2xl w-fit p-2 rounded'><SiHtml5 /></div>
 							</div>
 						</div>
 

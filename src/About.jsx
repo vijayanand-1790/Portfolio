@@ -37,7 +37,7 @@ const About = () => {
 					className='md:w-1/2'>
 					<div>
 						{/* <p className='text-xl font-semibold'>Frontend Developer (Fresher)</p> */}
-						<h4 className='md:text-2xl text-lg text-gray-500'>Get to know more about me.</h4>
+						<h4 className='md:text-2xl text-lg text-gray-500 md:mt-0 mt-6'>Get to know more about me.</h4>
 					</div>
 					<p className='md:mt-10 mt-5 md:text-lg text-base'>
 						I am a passionate Frontend Developer with a strong foundation in React.js, JavaScript, Tailwind CSS, HTML and CSS3. My journey into frontend development began with a deep curiosity and passion for creating interactive, user-friendly web applications. I continuously sharpen my skills by building personal projects, experimenting with new features, and applying best practices to improve both functionality and design. Transitioning into tech has been driven by my commitment and enthusiasm to craft modern, responsive interfaces that deliver engaging user experiences.					</p>

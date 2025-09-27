@@ -11,8 +11,8 @@ const Projects = () => {
       <div className='max-w-7xl mx-auto flex flex-col justify-center items-center md:px-5 lg:px-0 px-3 md:pt-0 pt-8 md:pb-15 pb-14'>
 
         <div>
-          <h1 className='text-black md:text-6xl text-4xl font-bold text-center'>My Projects</h1>
-          <p className='flex px-4 justify-center items-center text-center md:pt-2 pt-3 pb-5'>Below are the projects I've done for the better practice</p>
+          <h1 className='text-black md:text-6xl text-4xl font-bold text-center'>Personal Projects</h1>
+          <p className='flex px-4 justify-center items-center text-center md:pt-2 pt-3 pb-5'>Below are some of the projects I've done for the better practice</p>
         </div>
 
         <motion.div
