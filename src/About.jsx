@@ -1,57 +1,84 @@
-import React from 'react'
-import MyPic from './assets/AboutPortfolio.png'
-import { Link } from 'react-scroll'
+import React from "react";
+import { Link } from "react-scroll";
 import { motion } from "motion/react";
-import { useMediaQuery } from 'react-responsive';
-import AboutPic from './assets/just.jpg'
+import AboutPic from "./assets/just.jpg";
 
 const About = () => {
+  return (
+    <section
+      id="about"
+      className="w-full min-h-screen bg-[#0B1623] text-[#E4E8F1] flex flex-col items-center justify-center py-10"
+    >
+      {/* Section Title */}
+      <motion.h1
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.8 }}
+        className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center mb-12 md:mb-20"
+      >
+        <span className="text-[#00A8FF]">About</span> Me
+      </motion.h1>
 
-	// const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:gap-12 gap-10 px-6 md:px-10 lg:px-0">
+        {/* ==== Left Section (Image) ==== */}
+        <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.8 }}
+          className="md:w-1/2 flex justify-center "
+        >
+          <div className="bg-[#111C2D] shadow-[0_0_15px_rgba(0,168,255,0.2)] hover:shadow-[0_0_25px_rgba(0,168,255,0.5)] rounded-3xl p-4 flex justify-center">
+            <img
+              src={AboutPic}
+              alt="Vijay Anand"
+              className="rounded-2xl object-cover w-[220px] sm:w-[280px] md:w-[360px] lg:w-[400px]"
+            />
+          </div>
+        </motion.div>
 
-	return (
-		<div id='about' className='bg-neutral-200 text-black overflow-y-hidden'>
-			<h1 className='text-black md:text-6xl text-4xl font-bold text-center md:mb-20 mb-10'>About Me</h1>
-			<div className='max-w-5xl mx-auto flex md:flex-row flex-col md:gap-6 gap-3 justify-center items-center md:px-5 lg:px-0 px-5 md:pb-40 pb-15'>
+        {/* ==== Right Section (Content) ==== */}
+        <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="md:w-1/2 text-center md:text-left"
+        >
+          <h4 className="text-lg sm:text-xl text-[#A9B4C4] mb-3">
+            Get to know more about me 👇
+          </h4>
 
-				{/* image div */}
-				<motion.div
+          <p className="text-[#E4E8F1] text-base sm:text-lg md:text-[17px] leading-relaxed">
+            I am a passionate{" "}
+            <span className="text-[#00A8FF] font-semibold">
+              Front-End Developer
+            </span>{" "}
+            with a strong foundation in{" "}
+            <span className="text-[#00A8FF] font-semibold">
+              React.js, JavaScript, Tailwind CSS, HTML
+            </span>{" "}
+            and <span className="text-[#00A8FF] font-semibold">CSS3</span>. My
+            journey into web development began with a deep curiosity to build
+            interactive, user-friendly applications.
+            <br />
+            <br />
+            I constantly improve my skills by creating personal projects,
+            exploring new tools, and applying best practices in both design and
+            functionality. My goal is to craft modern, responsive interfaces
+            that deliver seamless and engaging user experiences.
+          </p>
 
-					initial={{ opacity: 0, y: -50 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: false }}
-					transition={{ delay: 0.1, duration: 1 }}
+          <Link to="contact" smooth={true} offset={-80} duration={500}>
+            <button className="mt-8 px-6 py-2 rounded-full bg-[#00A8FF] text-white font-semibold text-base sm:text-lg hover:bg-[#00C3FF] hover:shadow-[0_0_15px_#00A8FF] cursor-pointer duration-300">
+              Contact Me
+            </button>
+          </Link>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
-					className='md:w-1/2'>
-					<img src={AboutPic} className='md:w-[400px] w-[200px] rounded-full shadow-2xl shadow-neutral-700 object-cover' alt="Image" />
-				</motion.div>
-
-				{/* Content div */}
-				<motion.div
-
-					initial={{ opacity: 0, y: -50 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: false }}
-					transition={{ delay: 0.4, duration: 1 }}
-
-					className='md:w-1/2'>
-					<div>
-						{/* <p className='text-xl font-semibold'>Frontend Developer (Fresher)</p> */}
-						<h4 className='md:text-2xl text-lg text-gray-500 md:mt-0 mt-6'>Get to know more about me.</h4>
-					</div>
-					<p className='md:mt-10 mt-5 md:text-lg text-base'>
-						I am a passionate Frontend Developer with a strong foundation in React.js, JavaScript, Tailwind CSS, HTML and CSS3. My journey into frontend development began with a deep curiosity and passion for creating interactive, user-friendly web applications. I continuously sharpen my skills by building personal projects, experimenting with new features, and applying best practices to improve both functionality and design. Transitioning into tech has been driven by my commitment and enthusiasm to craft modern, responsive interfaces that deliver engaging user experiences.					</p>
-					<Link to='contact' smooth={true} offset={-80} duration={500}>
-						<button
-							className='px-4 py-2 md:mt-10 mt-5 bg-blue-600 hover:bg-blue-800 duration-500 rounded-4xl text-white md:text-xl text-base font-semibold cursor-pointer'>Contact Me
-						</button>
-					</Link>
-				</motion.div>
-
-			</div>
-
-		</div>
-	)
-}
-
-export default About
+export default About;

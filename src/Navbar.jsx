@@ -17,86 +17,101 @@ const Navbar = () => {
 	}
 
 	return (
-		<div className='w-full border-b border-neutral-500 bg-neutral-100 fixed top-0 left-0 z-[100] text-black overflow-x-hidden'>
-			<div className='max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-0 md:px-8 py-3'>
-				<div>
-					<h1 className='font-bold text-2xl'>Vijay Anand.</h1>
-				</div>
+  <div className="w-full bg-[#0B1623] text-[#E4E8F1] shadow-md fixed top-0 left-0 z-[100]">
+    {/* Main container with proper flex spacing */}
+    <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-10 py-4">
 
-				<div
-					className='hidden md:flex gap-x-8'>
+      {/* Left section — Logo/Name */}
+      <h1 className="font-bold text-2xl text-[#00A8FF]">Vijay Anand.</h1>
 
-					{
-						data.map((item) =>
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex items-center gap-x-8">
+        {data.map((item) => (
+          <ul
+            key={item.id}
+            className="text-lg font-semibold tracking-wide hover:text-[#00A8FF] duration-300 cursor-pointer"
+          >
+            <li>
+              <Link
+                activeClass="active"
+                to={item.link}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
+                {item.title}
+              </Link>
+            </li>
+          </ul>
+        ))}
+      </div>
 
-							<ul key={item.id} className='text-lg font-bold tracking-wide hover:text-blue-600 duration-300 cursor-pointer'>
-								<li>
-									<Link activeClass="active"
-										to={item.link}
-										spy={true}
-										smooth={true}
-										offset={-80}
-										duration={500}>{item.title}
-									</Link>
+      {/* Mobile Menu Button */}
+      <span className="md:hidden cursor-pointer">
+        <MdMenu size={28} onClick={toggleMenu} />
+      </span>
+    </div>
 
-								</li>
-							</ul>
+    {/* Mobile Menu */}
+    <div
+      className={`${
+        showMenu ? "right-0" : "-right-[100%]"
+      } w-[80%] h-screen flex flex-col items-center bg-[#111C2D] p-5 duration-300 fixed top-0 z-[200] border-l border-[#1E2A3A] shadow-2xl rounded-l-3xl pt-12`}
+    >
+      <img
+        src={MyPic}
+        className="w-20 rounded-full border border-[#1E2A3A] shadow-2xl"
+        alt="Profile"
+      />
 
-						)
-					}
+      <div className="mt-6 text-center">
+        <h1 className="font-bold text-2xl text-[#E4E8F1]">Vijay Anand</h1>
+        <h5 className="text-base text-[#A9B4C4] mt-1">
+          a Front-End Developer
+        </h5>
+      </div>
 
-				</div>
+      <div className="space-y-5 mt-8">
+        {data.map((item) => (
+          <ul
+            key={item.id}
+            className="text-lg font-semibold hover:text-[#00A8FF] duration-300 cursor-pointer"
+          >
+            <li>
+              <Link
+                activeClass="active"
+                onClick={toggleMenu}
+                to={item.link}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
+                {item.title}
+              </Link>
+            </li>
+          </ul>
+        ))}
+      </div>
 
-				<span className='sm:block md:hidden cursor-pointer'>
-					<MdMenu size={28} onClick={toggleMenu} />
-				</span>
+      <div className="mt-10 flex flex-col bg-[#0B1623] p-3 rounded-xl space-y-3 text-[#E4E8F1]">
+        <h3 className="text-center font-serif">Best Skills on</h3>
+        <div className="flex justify-center gap-3 text-[#00A8FF] text-2xl">
+          <FaReact />
+          <RiTailwindCssFill />
+          <SiJavascript />
+          <SiHtml5 />
+        </div>
+      </div>
 
+      <div className="absolute top-5 right-5 cursor-pointer text-[#E4E8F1]">
+        <MdClose size={28} onClick={toggleMenu} />
+      </div>
+    </div>
+  </div>
+);
 
-				{/* Mobile Menu */}
-
-				{
-					<div className={`${showMenu ? "right-0" : "-right-[100%] "} w-[80%] h-screen flex flex-col items-center bg-neutral-200 p-5 duration-400 fixed top-0 z-[200] border-l-2 border-neutral-700 shadow-2xl rounded-l-4xl pt-12`}>
-						<img src={MyPic} className='flex w-20 rounded-full border-1 border-neutral-700 shadow-2xl' alt="" />
-						<div className='mt-10'>
-							<h1 className='flex text-center font-bold text-3xl'>Vijay Anand</h1>
-							<h5 className='text-base text-center mt-1'>a Front-End Developer</h5>
-						</div>
-						<div className='space-y-5 mt-8'>
-							{
-								data.map((item) =>
-
-									<ul key={item.id} className='text-lg font-semibold hover:text-red-500 duration-400 cursor-pointer'>
-										<li>
-											<Link activeClass="active"
-												onClick={toggleMenu}
-												to={item.link}
-												spy={true}
-												smooth={true}
-												offset={-80}
-												duration={500}>{item.title}
-											</Link>
-										</li>
-									</ul>
-
-								)
-							}
-						</div>
-						<div className='mt-10 flex flex-col bg-neutral-300 p-2 rounded-xl space-y-5'>
-							<h3 className='flex justify-center font-serif'>Best Skills on</h3>
-							<div className='flex gap-3'>
-								<div className='text-2xl w-fit p-2 rounded'><FaReact /></div>
-								<div className=' text-2xl w-fit p-2 rounded'><RiTailwindCssFill /></div>
-								<div className=' text-2xl w-fit p-2 rounded'><SiJavascript /></div>
-								<div className=' text-2xl w-fit p-2 rounded'><SiHtml5 /></div>
-							</div>
-						</div>
-
-						<div className='absolute top-5 right-5 cursor-pointer'><MdClose size={28} onClick={toggleMenu} /></div>
-					</div>
-				}
-			</div>
-		</div>
-	)
 }
 
 export default Navbar

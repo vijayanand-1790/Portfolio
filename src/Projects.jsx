@@ -1,60 +1,71 @@
-import React from 'react'
-import { projectdata } from './projectdata'
-import { FaEye, FaGit, FaGithub } from 'react-icons/fa'
+import React from 'react';
+import { projectdata } from './projectdata';
+import { FaEye, FaGithub } from 'react-icons/fa';
 import { motion } from "motion/react";
-import { useMediaQuery } from 'react-responsive';
 
 const Projects = () => {
-
   return (
-    <div id='projects' className='bg-neutral-200 text-black overflow-y-hidden'>
-      <div className='max-w-7xl mx-auto flex flex-col justify-center items-center md:px-5 lg:px-0 px-3 md:pt-0 pt-8 md:pb-15 pb-14'>
+    <section id="projects" className="bg-[#0B1623] text-[#E4E8F1] overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col justify-center items-center px-6 md:px-10 lg:px-0 py-10">
 
-        <div>
-          <h1 className='text-black md:text-6xl text-4xl font-bold text-center'>Personal Projects</h1>
-          <p className='flex px-4 justify-center items-center text-center md:pt-2 pt-3 pb-5'>Below are some of the projects I've done for the better practice</p>
+        {/* ==== Section Header ==== */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-6xl font-extrabold"><span className="text-[#00A8FF]">Personal</span> Projects</h1>
+          <p className="text-[#A9B4C4] text-base md:text-lg mt-3">
+            Some of the projects I’ve created to practice and enhance my skills.
+          </p>
         </div>
 
+        {/* ==== Projects Grid ==== */}
         <motion.div
-          initial={{ opacity: 0, y: -70 }}
+          initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ delay: 0.2, duration: 1 }}
-          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-0 px-5 mt-3 md:gap-15 gap-8'>
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full "
+        >
+          {projectdata.map((project) => (
+            <motion.div
+              key={project.id}
+              className="bg-[#111C2D] rounded-2xl border border-[#1E2A3A] shadow-[0_0_15px_rgba(0,168,255,0.2)] hover:shadow-[0_0_25px_#00A8FF] hover:-translate-y-2 duration-300 overflow-hidden"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 md:h-56 object-cover rounded-t-2xl"
+              />
+              <div className="px-5 py-4 flex flex-col items-center text-center">
+                <h2 className="text-2xl md:text-3xl font-bold mb-2">{project.title}</h2>
+                <p className="text-[#A9B4C4] mb-4">{project.description}</p>
 
-          {
-            projectdata.map((project) =>
-              <div key={project.id}
-                className='bg-neutral-100 text-black shadow-neutral-600 shadow-md border-1 border-neutral-500 rounded-2xl hover:-translate-y-2 duration-200 hover:shadow-[0_0_25px_5px_rgba(250,204,21,0.9)]'>
-                <img src={project.image} alt={project.title} className='rounded-tr-2xl rounded-tl-2xl object-cover md:h-50 h-40' />
-                <div className='px-4 py-2 flex flex-col justify-center items-center md:space-y-6 space-y-3'>
-                  <h2 className='md:text-3xl text-2xl font-bold pt-3'> {project.title} </h2>
-                  <p className='md:mb-6 mb-3'> {project.description} </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-5 py-2 bg-[#00A8FF] hover:bg-[#00C3FF] text-white font-semibold rounded-full cursor-pointer shadow-md hover:shadow-[0_0_15px_#00A8FF] duration-300"
+                  >
+                    <FaEye />
+                    <span className="text-sm md:text-base">Live Demo</span>
+                  </a>
 
-                  {/* <p className='md:text-base text-sm'>Built with: <span className='px-2 py-0 bg-neutral-600 rounded mr-1'>React</span> <span className='px-2 py-0 bg-neutral-600 rounded '>Tailwind CSS</span> </p> */}
-
-
-                  <div className='flex justify-center items-center md:gap-4 gap-3 mb-5'>
-                    <a className='flex justify-center items-center md:px-4 px-3 md:py-3 py-2 bg-blue-600 hover:bg-blue-700 duration-300 rounded-4xl text-xl text-white font-semibold cursor-pointer md:gap-1 gap-3' href={project.liveUrl} target='_blank' rel="noopener noreferrer" >
-                      <FaEye />
-                      <p className='md:text-base font-semibold text-sm'>Live Demo</p>
-                    </a>
-                    <a className='flex justify-center items-center md:px-4 px-3 md:py-3 py-2 border-3 border-blue-600 rounded-4xl text-xl text-black hover:text-white font-semibold cursor-pointer md:gap-1 gap-3 hover:bg-blue-600 duration-300' href={project.GitHubUrl} target='_blank' rel="noopener noreferrer">
-                      <FaGithub />
-                      <p className='md:text-base text-sm font-semibold'>Source Code</p>
-                    </a>
-                  </div>
+                  <a
+                    href={project.GitHubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-5 py-2 border-2 border-[#00A8FF] rounded-full text-[#E4E8F1] hover:bg-[#00A8FF] hover:text-white font-semibold cursor-pointer duration-300"
+                  >
+                    <FaGithub />
+                    <span className="text-sm md:text-base">Source Code</span>
+                  </a>
                 </div>
-
-
               </div>
-            )
-          }
-
+            </motion.div>
+          ))}
         </motion.div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Projects
+export default Projects;
