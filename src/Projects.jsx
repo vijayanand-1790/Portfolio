@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-extrabold"><span className="text-[#00A8FF]">Personal</span> Projects</h1>
           <p className="text-[#A9B4C4] text-base md:text-lg mt-3">
-            Some of the projects I’ve created to practice and enhance my skills.
+            Few from my own projects which were done for the practice and self analyzing
           </p>
         </div>
 

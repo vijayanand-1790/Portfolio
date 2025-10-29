@@ -51,24 +51,39 @@ const About = () => {
           </h4>
 
           <p className="text-[#E4E8F1] text-base sm:text-lg md:text-[17px] leading-relaxed">
-            I am a passionate{" "}
+            I am a dedicated{" "}
             <span className="text-[#00A8FF] font-semibold">
               Front-End Developer
             </span>{" "}
-            with a strong foundation in{" "}
+            with{" "}
+            <span className="text-[#00A8FF] font-semibold">
+              2 years of professional experience
+            </span>
+            , specializing in{" "}
             <span className="text-[#00A8FF] font-semibold">
               React.js, JavaScript, Tailwind CSS, HTML
             </span>{" "}
-            and <span className="text-[#00A8FF] font-semibold">CSS3</span>. My
-            journey into web development began with a deep curiosity to build
-            interactive, user-friendly applications.
+            and{" "}
+            <span className="text-[#00A8FF] font-semibold">CSS3</span>. Throughout my
+            career, I have focused on building{" "}
+            <span className="text-[#00A8FF] font-semibold">
+              high-performing, interactive, and user-centric web applications
+            </span>{" "}
+            that align with modern design standards.
             <br />
             <br />
-            I constantly improve my skills by creating personal projects,
-            exploring new tools, and applying best practices in both design and
-            functionality. My goal is to craft modern, responsive interfaces
-            that deliver seamless and engaging user experiences.
+            I continuously enhance my expertise by staying updated with emerging
+            technologies and implementing{" "}
+            <span className="text-[#00A8FF] font-semibold">
+              best practices in performance optimization, responsive design, and accessibility
+            </span>
+            . My goal is to develop{" "}
+            <span className="text-[#00A8FF] font-semibold">
+              scalable, visually appealing, and intuitive interfaces
+            </span>{" "}
+            that provide seamless digital experiences across all devices.
           </p>
+
 
           <Link to="contact" smooth={true} offset={-80} duration={500}>
             <button className="mt-8 px-6 py-2 rounded-full bg-[#00A8FF] text-white font-semibold text-base sm:text-lg hover:bg-[#00C3FF] hover:shadow-[0_0_15px_#00A8FF] cursor-pointer duration-300">

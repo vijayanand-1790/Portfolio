@@ -47,7 +47,7 @@ const Home = () => {
               duration={500}
               className="px-6 py-2 rounded-full bg-[#00A8FF] text-white font-semibold text-base sm:text-lg cursor-pointer hover:bg-[#00C3FF] hover:shadow-[0_0_15px_#00A8FF] duration-300"
             >
-              My Projects
+              Personal Projects
             </Link>
 
             <a

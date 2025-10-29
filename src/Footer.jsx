@@ -36,7 +36,7 @@ const Footer = () => {
 						<h2 className='text-2xl font-bold pb-5'>Have a Questions?</h2>
 						<div className='flex gap-3 text-lg items-center pb-3'>
 							<FaPhoneAlt size={20} />
-							<p className='text-lg'>9884127840</p>
+							<p className='text-lg'>+91 9884127840</p>
 						</div>
 						<div className='flex gap-3 text-lg items-center'>
 							<MdEmail size={20} />
