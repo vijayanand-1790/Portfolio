@@ -51,7 +51,7 @@ const Home = () => {
             </Link>
 
             <a
-              href="/Resume13.pdf"
+              href="/Resume14.pdf"
               target="_blank"
               className="px-6 py-2 rounded-full border-2 border-[#00A8FF] text-[#E4E8F1] font-semibold text-base sm:text-lg cursor-pointer hover:bg-[#00A8FF] hover:text-white duration-300"
             >
