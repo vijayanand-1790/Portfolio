@@ -51,7 +51,7 @@ const About = () => {
           </h4>
 
           <p className="text-[#E4E8F1] text-base sm:text-lg md:text-[17px] leading-relaxed">
-            I am a dedicated and self-Learned{" "}
+            I am a self-taught{" "}
             <span className="text-[#00A8FF] font-semibold">
               Front-End Developer
             </span>{" "}
