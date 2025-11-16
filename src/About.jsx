@@ -51,21 +51,16 @@ const About = () => {
           </h4>
 
           <p className="text-[#E4E8F1] text-base sm:text-lg md:text-[17px] leading-relaxed">
-            I am a dedicated{" "}
+            I am a self-taught{" "}
             <span className="text-[#00A8FF] font-semibold">
               Front-End Developer
             </span>{" "}
-            with{" "}
-            <span className="text-[#00A8FF] font-semibold">
-              2 years of professional experience
-            </span>
-            , specializing in{" "}
+            with Hands-on experience, specializing in{" "}
             <span className="text-[#00A8FF] font-semibold">
               React.js, JavaScript, Tailwind CSS, HTML
             </span>{" "}
             and{" "}
-            <span className="text-[#00A8FF] font-semibold">CSS3</span>. Throughout my
-            career, I have focused on building{" "}
+            <span className="text-[#00A8FF] font-semibold">CSS3</span>. I have focused on building{" "}
             <span className="text-[#00A8FF] font-semibold">
               high-performing, interactive, and user-centric web applications
             </span>{" "}
@@ -73,9 +68,9 @@ const About = () => {
             <br />
             <br />
             I continuously enhance my expertise by staying updated with emerging
-            technologies and implementing{" "}
+            technologies and implementing best practices in{" "}
             <span className="text-[#00A8FF] font-semibold">
-              best practices in performance optimization, responsive design, and accessibility
+              performance optimization, responsive design, and accessibility
             </span>
             . My goal is to develop{" "}
             <span className="text-[#00A8FF] font-semibold">
